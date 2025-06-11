@@ -38,10 +38,20 @@
         <section id="my-profile">
             <h1>My Profile</h1>
             <div class="profile">
-                <div class="row-1">
-                    <div class="aboutme-img"><img src="https://picsum.photos/100" alt=""></div>
+                <div class="flex-item">
+                    <div class="aboutme-img"></div>
                     <div class="aboutme-title">About Me</div>
-                    <div class="aboutme-text"></div>
+                    <div class="aboutme-text">This is about me</div>
+                </div>
+                <div class="flex-item">
+                    <div class="myjob-img"></div>
+                    <div class="myjob-title">My Job</div>
+                    <div class="myjob-text">I am working as a...</div>
+                </div>
+                <div class="flex-item">
+                    <div class="myhobbies-img"></div>
+                    <div class="myhobbies-title">My Hobbies</div>
+                    <div class="myhobbies-text">I love...</div>
                 </div>
             </div>
         </section>
@@ -49,52 +59,42 @@
         <!-- Leave a Message -->
         <section id="leave-a-message">
             <h1>Leave a Message</h1>
-            <div class="container-left">
-                <form action="">
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="name">Name</label>
-                        </div>
-                        <div class="dot">:</div>
-                        <div class="col-75">
+            <form action="">
+                <div class="container-left">
+                    <div class="col-25">
+                        <div class="row"><label for="name">Name</label></div>
+                        <div class="row"><label for="birth-date">Birth Date</label></div>
+                        <div class="row"><label for="gender">Gender</label></div>
+                        <div class="row"><label for="message">Message</label></div>
+                    </div>
+                    <div class="dotdot">
+                        <div class="row">:</div>
+                        <div class="row">:</div>
+                        <div class="row">:</div>
+                        <div class="row">:</div>
+                    </div>
+                    <div class="col-75">
+                        <div class="row">
                             <input type="text" id="name" name="name" placeholder="Name">
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="birth-date">Birth Date</label>
-                        </div>
-                        <div class="dot">:</div>
-                        <div class="col-75">
+                        <div class="row">
                             <input type="date" id="date" name="birth-date">
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="gender">Gender</label>
-                        </div>
-                        <div class="dot">:</div>
-                        <div class="col-75">
+                        <div class="row">
                             <input type="radio" id="male" name="gender" value="Male">
                             <label for="male">Male</label>
                             <input type="radio" id="female" name="gender" value="Female">
                             <label for="female">Female</label>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-25">
-                            <label for="message">Message</label>
-                        </div>
-                        <div class="dot">:</div>
-                        <div class="col-75">
+                        <div class="row">
                             <textarea name="message" id="message" placeholder="Type your message..."></textarea>
                         </div>
+                        <div class="row">
+                            <input type="submit" value="Submit">
+                        </div>
                     </div>
-                    <div class="row">
-                        <input type="submit" value="Submit">
-                    </div>
-                </form>
-            </div>
+                </div>
+            </form>                
         </section>
     </main>
 

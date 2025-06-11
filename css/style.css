@@ -51,27 +51,46 @@ section {
 }
 
 /* My Profile */
-
+.profile {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+}
+.flex-item {
+    width: calc(100%/3);
+}
+.aboutme-img {
+    background-image: url(https://picsum.photos/100);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+.myjob-img {
+    background-image: url(https://picsum.photos/100);
+    border-radius: 50%;
+}
+.myhobbies-img {
+    background-image: url(https://picsum.photos/100);
+    border-radius: 50%;
+}
 
 /* Leave a Message */
 .container-left {
+    display: flex;
     width: 50%;
     padding-right: 8px;
 }
 .col-25 {
-    flex-direction: column;
     width: 25%;
-    margin-top: 6px;
 }
-.dot {
-    float: left;
+.dotdot {
     width: 3%;
-    margin-top: 6px;
 }
 .col-75 {
-    float: left;
     width: 72%;
+}
+.row {
     margin-top: 6px;
+    align-items: baseline;
 }
 input[type=text], input[type=date], textarea {
     width: 100%;
@@ -80,9 +99,8 @@ input[type=text], input[type=date], textarea {
     box-sizing: border-box;
 }
 input[type=submit] {
-    cursor: pointer;
     float: right;
-    margin-top: 6px;
+    cursor: pointer;
 }
 
 /* Footer */
