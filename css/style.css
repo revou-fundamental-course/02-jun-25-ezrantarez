@@ -1,29 +1,91 @@
 /* Header */
 .main-header {
     border: 1px solid;
-    display: flex
-;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding: 1% 2%;
 }
+
+/* Logo */
 .main-logo {
     height: 50px;
     width: 50px;
-    background-image: url(https://picsum.photos/200);
+    background-image: url(/assets/profile\ photo.jpg);
+    background-size: 50px ;
     border-radius: 50%;
 }
+
+/* Navigation bar */
 nav {
     border: 1px solid;
-    padding: 8px;
+    border-radius: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     color: black;
     text-decoration: none;
 }
+nav a {
+    padding: 8px;
+    border-right: 1px solid;
+}
+nav a:last-child {
+    border-right: none;
+}
+
+/* Banner */
 .banner-img {
     border: 1px solid;
     height: 350px;
+    margin-bottom: 10px;
     background-image: url(https://picsum.photos/200/300);
     background-size: cover;
     background-position: center;
 }
+
+/* Section */
 section {
     height: 500px;
+    border: 1px solid;
+    padding: 5%;
+}
+
+/* My Profile */
+
+
+/* Leave a Message */
+.container-left {
+    width: 50%;
+    padding-right: 8px;
+}
+.col-25 {
+    flex-direction: column;
+    width: 25%;
+    margin-top: 6px;
+}
+.dot {
+    float: left;
+    width: 3%;
+    margin-top: 6px;
+}
+.col-75 {
+    float: left;
+    width: 72%;
+    margin-top: 6px;
+}
+input[type=text], input[type=date], textarea {
+    width: 100%;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type=submit] {
+    cursor: pointer;
+    float: right;
+    margin-top: 6px;
+}
+
+/* Footer */
+.main-footer {
+    border: 1px solid;
 }
