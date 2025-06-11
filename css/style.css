@@ -37,10 +37,18 @@ nav a:last-child {
 .banner-img {
     border: 1px solid;
     height: 350px;
-    margin-bottom: 10px;
-    background-image: url(https://picsum.photos/200/300);
+    background-image: url(https://picsum.photos/750);
     background-size: cover;
     background-position: center;
+}
+.img-1 {
+    background-image: url(https://picsum.photos/750);
+}
+.img-2 {
+    background-image: url(https://picsum.photos/775);
+}
+.img-3 {
+    background-image: url(https://picsum.photos/800);
 }
 
 /* Section */

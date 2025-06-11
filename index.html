@@ -7,6 +7,8 @@
     
     <!-- CSS External -->
     <link rel="stylesheet" href="/css/style.css">
+    <!-- JS External -->
+    <script src="/js/script.js"></script>
 </head>
 
 <body>
@@ -26,12 +28,15 @@
         <section id="home">
             <h1>Home</h1>
             <div class="intro">
-                <h3>Hi there, Welcome to My Portofolio Website</h3>
+                <h4>Hi there, Welcome to My Portofolio Website</h4>
                 <p>My name is Ezra Antarez. I am a Civil Engineer who is learning Web Development.</p>
                 <p>Please, check out these photos from my work experience.</p>
             </div>
             <!-- Banner -->
-            <div class="banner-img"></div>
+            <div class="banner-img img-1"></div>
+            <div class="banner-img img-2"></div>
+            <div class="banner-img img-3"></div>
+            <button onclick="nextBanner">Next Banner</button>
         </section>
         
         <!-- My Profile -->
@@ -40,17 +45,17 @@
             <div class="profile">
                 <div class="flex-item">
                     <div class="aboutme-img"></div>
-                    <div class="aboutme-title">About Me</div>
+                    <div class="aboutme-title"><h4>About Me</h4></div>
                     <div class="aboutme-text">This is about me</div>
                 </div>
                 <div class="flex-item">
                     <div class="myjob-img"></div>
-                    <div class="myjob-title">My Job</div>
+                    <div class="myjob-title"><h4>My Job</h4></div>
                     <div class="myjob-text">I am working as a...</div>
                 </div>
                 <div class="flex-item">
                     <div class="myhobbies-img"></div>
-                    <div class="myhobbies-title">My Hobbies</div>
+                    <div class="myhobbies-title"><h4>My Hobbies</h4></div>
                     <div class="myhobbies-text">I love...</div>
                 </div>
             </div>
@@ -75,7 +80,7 @@
                     </div>
                     <div class="col-75">
                         <div class="row">
-                            <input type="text" id="name" name="name" placeholder="Name">
+                            <input type="text" id="name" name="name" placeholder="Name" required>
                         </div>
                         <div class="row">
                             <input type="date" id="date" name="birth-date">
@@ -90,7 +95,7 @@
                             <textarea name="message" id="message" placeholder="Type your message..."></textarea>
                         </div>
                         <div class="row">
-                            <input type="submit" value="Submit">
+                            <input type="submit" value="Submit" onclick="validateForm()">
                         </div>
                     </div>
                 </div>
