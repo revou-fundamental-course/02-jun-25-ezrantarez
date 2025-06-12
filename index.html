@@ -23,7 +23,7 @@
 
     <!-- Header -->
     <header id="home">
-        <div class="banner-1"><img src="/assets/banner-1.jpg" class="img-1" alt="">
+        <div class="banner"><img src="/assets/banner-1.jpg" class="banner-1" alt="">
             <div class="intro">
                 <h1>Hi there!</h1>
                 <p>Welcome to my portofolio website</p>
@@ -58,8 +58,8 @@
     <section id="contact">
 
         <!-- Form fill (on the left) -->
-        <div class="fill">
-            <form action="">
+        <form action="">
+            <div class="fill">
                 <div class="col-25">
                     <div class="row"><label for="name">Name</label></div>
                     <div class="row"><label for="birth-date">Birth Date</label></div>
@@ -82,18 +82,19 @@
                     <div class="row">
                         <textarea name="message" id="message" placeholder="Type your message..."></textarea>
                     </div>
-                    <div class="row">
-                        <input type="submit" value="Submit" onclick="validateForm()">
-                    </div>
                 </div>
-            </form>
-        </div>
+            </div>    
+            <div class="col-span">
+                <input type="submit" value="Submit" onclick="validateForm()">
+            </div>
+        </form>
 
         <!-- Form result (on the right) -->
         <div class="result"></div>
     </section>
 
     <!-- Footer -->
+    <hr>
     <footer>
         <div>Created by Ezra Antarez</div>
     </footer>
