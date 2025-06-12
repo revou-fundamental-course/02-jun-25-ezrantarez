@@ -4,107 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ezra's Portofolio Website</title>
-    
+
     <!-- CSS External -->
     <link rel="stylesheet" href="/css/style.css">
-    <!-- JS External -->
-    <script src="/js/script.js"></script>
 </head>
 
 <body>
-    <header class="main-header">
-        <!-- logo website -->
-        <div class="main-logo"></div>
-        <!-- navbar -->
+
+    <!-- Navbar (sit on top) -->
+    <div class="navbar">
+        <div class="logo"></div>
         <nav>
             <a href="#home">Home</a>
-            <a href="#my-profile">My Profile</a>
-            <a href="#leave-a-message">Leave a Message</a>
+            <a href="#profile">Profile</a>
+            <a href="#contact">Contact</a>
         </nav>
+    </div>
+
+    <!-- Header -->
+    <header id="home">
+        <div class="banner-1"><img src="/assets/banner-1.jpg" class="img-1" alt="">
+            <div class="intro">
+                <h1>Hi there!</h1>
+                <p>Welcome to my portofolio website</p>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <!-- Home -->
-        <section id="home">
-            <h1>Home</h1>
-            <div class="intro">
-                <h4>Hi there, Welcome to My Portofolio Website</h4>
-                <p>My name is Ezra Antarez. I am a Civil Engineer who is learning Web Development.</p>
-                <p>Please, check out these photos from my work experience.</p>
-            </div>
-            <!-- Banner -->
-            <div class="banner-img img-1"></div>
-            <div class="banner-img img-2"></div>
-            <div class="banner-img img-3"></div>
-            <button onclick="nextBanner">Next Banner</button>
-        </section>
-        
-        <!-- My Profile -->
-        <section id="my-profile">
-            <h1>My Profile</h1>
-            <div class="profile">
-                <div class="flex-item">
-                    <div class="aboutme-img"></div>
-                    <div class="aboutme-title"><h4>About Me</h4></div>
-                    <div class="aboutme-text">This is about me</div>
-                </div>
-                <div class="flex-item">
-                    <div class="myjob-img"></div>
-                    <div class="myjob-title"><h4>My Job</h4></div>
-                    <div class="myjob-text">I am working as a...</div>
-                </div>
-                <div class="flex-item">
-                    <div class="myhobbies-img"></div>
-                    <div class="myhobbies-title"><h4>My Hobbies</h4></div>
-                    <div class="myhobbies-text">My hobbies are...</div>
-                </div>
-            </div>
-        </section>
+    <!-- My Profile -->
+    <h1>Profile</h1>
+    <hr>
+    <section id="profile">
+        <div class="mybg">
+            <div class="mybg-img"><img src="/assets/profile-1.jpg" class="imgP-1" alt=""></div>
+            <div class="mybg-title"><h3>My Background</h3></div>
+            <div class="mybg-par">My name is Ezra Antarez. I graduated as a Bachelor of Engineering in 2021 and have worked in Civil Engineering role for almost 4 years.</div>
+        </div>
+        <div class="myjob">
+            <div class="myjob-img"><img src="/assets/profile-2.jpg" class="imgP-2" alt=""></div>
+            <div class="myjob-title"><h3>My Job</h3></div>
+            <div class="myjob-par">I am currently working as an Engineer in a drilling contractor. I would say working in a construction company is challenging yet fun. The problems you encounter might shape you to be a better person everyday.</div>
+        </div>
+        <div class="myhobbies">
+            <div class="myhobbies-img"><img src="/assets/profile-3.jpg" class="imgP-3" alt=""></div>
+            <div class="myhobbies-title"><h3>My Hobbies</h3></div>
+            <div class="myhobbies-par">To balance working, I like to spent my time in holiday trips or events. I totally agree that you better spend money on experience than things.</div>
+        </div>
+    </section>
 
-        <!-- Leave a Message -->
-        <section id="leave-a-message">
-            <h1>Leave a Message</h1>
+    <!-- Message Form -->
+    <h1>Contact</h1>
+    <hr>
+    <section id="contact">
+
+        <!-- Form fill (on the left) -->
+        <div class="fill">
             <form action="">
-                <div class="container-left">
-                    <div class="col-25">
-                        <div class="row"><label for="name">Name</label></div>
-                        <div class="row"><label for="birth-date">Birth Date</label></div>
-                        <div class="row"><label for="gender">Gender</label></div>
-                        <div class="row"><label for="message">Message</label></div>
+                <div class="col-25">
+                    <div class="row"><label for="name">Name</label></div>
+                    <div class="row"><label for="birth-date">Birth Date</label></div>
+                    <div class="row"><label for="gender">Gender</label></div>
+                    <div class="row"><label for="message">Message</label></div>
+                </div>
+                <div class="col-75">
+                    <div class="row">
+                        <input type="text" id="name" name="name" placeholder="Name" required>
                     </div>
-                    <div class="dotdot">
-                        <div class="row">:</div>
-                        <div class="row">:</div>
-                        <div class="row">:</div>
-                        <div class="row">:</div>
+                    <div class="row">
+                        <input type="date" id="date" name="birth-date">
                     </div>
-                    <div class="col-75">
-                        <div class="row">
-                            <input type="text" id="name" name="name" placeholder="Name" required>
-                        </div>
-                        <div class="row">
-                            <input type="date" id="date" name="birth-date">
-                        </div>
-                        <div class="row">
-                            <input type="radio" id="male" name="gender" value="Male">
-                            <label for="male">Male</label>
-                            <input type="radio" id="female" name="gender" value="Female">
-                            <label for="female">Female</label>
-                        </div>
-                        <div class="row">
-                            <textarea name="message" id="message" placeholder="Type your message..."></textarea>
-                        </div>
-                        <div class="row">
-                            <input type="submit" value="Submit" onclick="validateForm()">
-                        </div>
+                    <div class="row">
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div class="row">
+                        <textarea name="message" id="message" placeholder="Type your message..."></textarea>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Submit" onclick="validateForm()">
                     </div>
                 </div>
-            </form>                
-        </section>
-    </main>
+            </form>
+        </div>
 
-    <footer class="main-footer">
+        <!-- Form result (on the right) -->
+        <div class="result"></div>
+    </section>
 
+    <!-- Footer -->
+    <footer>
+        <div>Created by Ezra Antarez</div>
     </footer>
 </body>
 </html>
