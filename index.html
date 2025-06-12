@@ -23,9 +23,12 @@
 
     <!-- Header -->
     <header id="home">
-        <div class="banner"><img src="/assets/banner-1.jpg" class="banner-1" alt="">
+        <div class="banner">
+            <img src="/assets/banner-1.jpg" class="banner-slideshow" alt="">
+            <img src="/assets/banner-2.jpg" class="banner-slideshow" alt="">
+            <img src="/assets/banner-3.jpg" class="banner-slideshow" alt="">
             <div class="intro">
-                <h1>Hi there!</h1>
+                <h1>Hi <span id="greet">there</span>!</h1>
                 <p>Welcome to my portofolio website</p>
             </div>
         </div>
@@ -58,20 +61,20 @@
     <section id="contact">
 
         <!-- Form fill (on the left) -->
-        <form action="">
+        <form name="contact-form" onsubmit="return validateForm()">
             <div class="fill">
                 <div class="col-25">
-                    <div class="row"><label for="name">Name</label></div>
-                    <div class="row"><label for="birth-date">Birth Date</label></div>
-                    <div class="row"><label for="gender">Gender</label></div>
-                    <div class="row"><label for="message">Message</label></div>
+                    <div class="row"><label>Name</label></div>
+                    <div class="row"><label>Birth Date</label></div>
+                    <div class="row"><label>Gender</label></div>
+                    <div class="row"><label>Message</label></div>
                 </div>
                 <div class="col-75">
                     <div class="row">
-                        <input type="text" id="name" name="name" placeholder="Name" required>
+                        <input type="text" name="name" placeholder="Name">
                     </div>
                     <div class="row">
-                        <input type="date" id="date" name="birth-date">
+                        <input type="date" name="birth-date">
                     </div>
                     <div class="row">
                         <input type="radio" id="male" name="gender" value="Male">
@@ -80,17 +83,35 @@
                         <label for="female">Female</label>
                     </div>
                     <div class="row">
-                        <textarea name="message" id="message" placeholder="Type your message..."></textarea>
+                        <textarea name="message" placeholder="Type your message..."></textarea>
                     </div>
                 </div>
             </div>    
             <div class="col-span">
-                <input type="submit" value="Submit" onclick="validateForm()">
+                <input type="submit" value="Submit">
             </div>
         </form>
 
         <!-- Form result (on the right) -->
-        <div class="result"></div>
+        <div class="global-result">
+            <div class="result">
+                <div class="col-25">
+                    <div class="row">Name</div>
+                  <div class="row">Birth Date</div>
+                    <div class="row">Gender</div>
+                    <div class="row">Message</div>
+                </div>
+                <div class="col-75">
+                    <div class="row">: <span id="sent-name"></span></div>
+                    <div class="row">: <span id="sent-birthdate"></span></div>
+                    <div class="row">: <span id="sent-gender"></span></div>
+                    <div class="row">: <span id="sent-message"></span></div>
+                </div>
+            <div class="col-span">
+            </div>
+        </div>
+        </div>
+    <script src="/js/script.js"></script>    
     </section>
 
     <!-- Footer -->
@@ -98,5 +119,7 @@
     <footer>
         <div>Created by Ezra Antarez</div>
     </footer>
+    
 </body>
+
 </html>
